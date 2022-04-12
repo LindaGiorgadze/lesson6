@@ -1,0 +1,47 @@
+.inline-block {
+    display: inline-block;
+}
+.box {
+    width: 49%;
+    overflow: hidden;
+}
+.box img {
+    height: 130px;
+    width: 100px;
+    object-fit: cover;
+}
+.box p {
+    width: 80%;
+    vertical-align: top;
+}
+.floatWrapper {
+    margin: 100px auto 0;
+    width: 80%;
+    background-color: antiquewhite;
+}
+.floatWrapper img {
+    float: right;
+    margin: 0 0 35px 40px;
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+}
+.floatWrapper img:hover {
+    transform: scale(2);
+}
+.floatWrapper p {
+    height: 100px;
+    overflow: hidden;
+}
+.floatWrapper p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+}
+.clear {
+    clear: both;
+}
+.floatWrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
